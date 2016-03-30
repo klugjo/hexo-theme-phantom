@@ -1,0 +1,30 @@
+<section class="main clearfix">
+
+    <section class="top" style="background: url('<%- item.cover_detail || theme.default_cover_detail %>');">
+        <div class="wrapper content_header clearfix">
+            <%- partial('article-full-nav', {item: item}) %>
+            <h1 class="title"><%- item.title || theme.default_post_title || "Untitled" %></h1>
+        </div>
+    </section><!-- end top -->
+
+    <section class="wrapper">
+        <div class="content">
+
+            <!-- Gallery -->
+            <% if (item.photos && item.photos.length){ %>
+                <%- partial('gallery') %>
+            <% } %>
+
+            <!-- Content -->
+            <%- item.content %>
+
+            <!-- Tags -->
+            <%- partial('article-tags') %>
+
+            <!-- Comments -->
+            <div>
+                <%- partial("_partial/comments.ejs") %>
+            </div>
+        </div><!-- end content -->
+    </section>
+</section><!-- end main -->

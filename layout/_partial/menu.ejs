@@ -1,0 +1,30 @@
+<!-- Header -->
+<header id="header">
+    <div class="inner">
+
+        <!-- Logo -->
+        <a href="<%- config.root %>" class="logo">
+            <span class="symbol"><img src="<%- theme.logo_src %>" alt="" /></span><span class="title"><%-config.title || ""%></span>
+        </a>
+
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+        <% for (var i in theme.menu){ %>
+            <li>
+                <a href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+            </li>
+        <% } %>
+    </ul>
+</nav>

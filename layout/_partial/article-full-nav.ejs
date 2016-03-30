@@ -1,0 +1,25 @@
+<% var titlePrevious, titleNext %>
+
+<div class="work_nav">
+
+    <ul class="btn clearfix">
+        <% if (item.prev) {
+            titlePrevious = item.prev.title || theme.default_post_title;
+            titlePrevious = titlePrevious.length > 40 ? (titlePrevious.substring(0,40) + "...") : titlePrevious;
+        %>
+        <li><a href="<%- url_for(item.prev.path) %>" class="previous" data-title="<%= titlePrevious %>"></a></li>
+        <% } else { %>
+        <li><a class="previous disabled"></a></li>
+        <% } %>
+        <li><a href="<%- config.root %>" class="grid" data-title="Portfolio"></a></li>
+        <% if (item.next) {
+            titleNext = item.next.title || theme.default_post_title;
+            titleNext = titleNext.length > 17 ? (titleNext.substring(0,17) + "...") : titleNext;
+        %>
+        <li><a href="<%- url_for(item.next.path) %>" class="next" data-title="<%= titleNext %>"></a></li>
+        <% } else { %>
+        <li><a class="next disabled"></a></li>
+        <% } %>
+    </ul>
+
+</div><!-- end work_nav -->

@@ -1,0 +1,15 @@
+<%
+    var cssClass = "style" + (index % 12 + 1);
+%>
+
+<article class="<%- cssClass %>">
+    <span class="image">
+        <img src="<%- item.cover_index || theme.default_cover_index %>" alt="" />
+    </span>
+    <a href="<%- config.root %><%- item.path %>">
+        <h2><%- item.title || theme.default_post_title || "Untitled" %></h2>
+        <div class="content">
+            <p><%- item.subtitle || "" %></p>
+        </div>
+    </a>
+</article>

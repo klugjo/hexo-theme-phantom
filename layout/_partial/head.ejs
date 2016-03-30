@@ -1,0 +1,74 @@
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Description-->
+    <% if (page.description){ %>
+        <meta name="description" content="<%= page.description %>">
+    <% } else if (config.description){ %>
+        <meta name="description" content="<%= config.description %>">
+    <% } else if (page.excerpt){ %>
+        <meta name="description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '') %>">
+    <% } else if (page.content){ %>
+        <meta name="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
+    <% } %>
+
+    <!--Author-->
+    <% if (config.author){ %>
+        <meta name="author" content="<%= config.author %>">
+    <% } %>
+
+    <!--Open Graph Title-->
+    <% if (page.title){ %>
+        <meta property="og:title" content="<%= page.title %>"/>
+    <% } %>
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="<%= config.title %>"/>
+
+    <!--Page Cover-->
+    <% if(page.cover) { %>
+        <meta property="og:image" content="<%= page.cover %>" />
+    <% } else { %>
+        <meta property="og:image" content="<%= theme.cover %>"/>
+    <% } %>
+
+    <!-- Title -->
+    <%
+        var title = [];
+        if (page.current > 1) title.push(__('page', page.current));
+        if (page.title) title.push(page.title);
+        if (page.category) title.push(page.category);
+        if (page.tag) title.push(page.tag);
+        if (page.archive) {
+            if (page.year) title.push(__('archive_b', page.year + (page.month ? '/' + page.month : '')));
+            else title.push(__('archive_a'));
+        }
+        title.push(config.title);
+    %>
+    <title><%= title.join(' - ') %></title>
+
+    <!-- Custom CSS -->
+    <%- css('sass/main.css') %>
+
+    <!--[if lt IE 8]>
+        <%- js('js/ie/html5shiv.js') %>
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+        <%- css('sass/ie8.css') %>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <%- css('sass/ie9.css') %>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    <%- partial('google-analytics') %>
+
+</head>

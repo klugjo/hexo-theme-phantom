@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<%- partial('_partial/head') %>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Menu -->
+        <%- partial('_partial/menu') %>
+
+        <div id="main">
+            <div class="inner">
+                <header>
+                    <h1><%- theme.subtitle_main %></h1>
+                    <p><%- theme.susbtitle_secondary %></p>
+                </header>
+
+                <!-- Main Content -->
+                <%- body %>
+
+            </div>
+        </div>
+
+        <%- partial('_partial/footer.ejs') %>
+    </div>
+
+    <!-- After footer scripts -->
+    <%- partial('_partial/after-footer') %>
+
+</body>
+
+</html>
