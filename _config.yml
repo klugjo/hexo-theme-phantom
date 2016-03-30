@@ -18,16 +18,16 @@ about_footer: This theme was initially developed by HTML5 Templates and adapted 
 # Default post title
 default_post_title: Untitled
 
-# Default post cover index page
+# Default post cover index page (Recommended)
 default_cover_index: "http://placehold.it/450x450"
 
-# Default post cover index page
-default_cover_detail: "http://placehold.it/1300x500"
+# Default post cover index page (Optional)
+default_cover_detail:
 
 # Comments. Choose one by filling up the information
 comments:
   # Disqus comments
-  disqus_shortname:
+  disqus_shortname: klugjo
   # Facebook comments
   facebook:
     appid:
