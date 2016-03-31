@@ -1,0 +1,34 @@
+#main {
+
+  .inner {
+
+    .gallery-container{
+      width: 100%;
+      display: block;
+
+      &:after {
+        content: " ";
+        visibility: hidden;
+        display: block;
+        height: 50px;
+        clear: both;
+      }
+
+      .picture-container{
+        width: 25%;
+        float: left;
+        min-width: 200px;
+
+        a {
+          border: none;
+
+          .img-thumbnail{
+            padding-right: 20px;
+            width: 100%
+          }
+
+        }
+      }
+    }
+  }
+}

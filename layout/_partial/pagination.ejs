@@ -1,10 +1,6 @@
 <% if(page.prev || page.next) { %>
     <div class="pagination-container">
-        <% if (page.prev) { %>
-            <div class="pagination"><a href="<%- config.root %><%- page.prev_link %>"><%- __('next')%></a></div>
-        <% } %>
-        <% if (page.next) { %>
-            <div class="pagination"><a href="<%- config.root %><%- page.next_link %>"><%- __('prev')%></a></div>
-        <% } %>
+        <div class="pagination <%- page.prev ? "" : "disabled" %>"><a href="<%- config.root %><%- page.prev_link %>"><i class="icon fa-caret-left"></i></a></div>
+        <div class="pagination <%- page.next ? "" : "disabled" %>"><a href="<%- config.root %><%- page.next_link %>"><i class="icon fa-caret-right"></i></a></div>
     </div>
 <% } %>

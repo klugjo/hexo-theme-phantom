@@ -1,0 +1,24 @@
+
+  .pagination-container {
+    text-align: center;
+    margin-top: 100px;
+
+    .pagination {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        border: none;
+        font-size: 50px;
+        padding: 20px;
+      }
+      &.disabled {
+        a {
+          cursor: default;
+          color: _palette(bg-alt);
+          &:hover {
+            color: _palette(bg-alt) !important;
+          }
+        }
+      }
+    }
+  }
