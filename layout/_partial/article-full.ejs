@@ -1,7 +1,7 @@
 
 <h1><%- item.title || theme.default_post_title || "Untitled" %></h1>
 <% if(item.cover_detail || theme.default_cover_detail) { %>
-    <span class="image main"><img src="<%- item.cover_detail || theme.default_cover_detail %>" alt="" /></span>
+    <span class="image main"><img src="<%- config.root %><%- item.cover_detail || theme.default_cover_detail %>" alt="" /></span>
 <% } %>
 
 <!-- Gallery -->

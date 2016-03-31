@@ -2,6 +2,7 @@
 menu:
   Home: /
   Archives: /archives
+  About: /about.html
 
 # Logo Image Source
 logo_src: /images/logo.svg
@@ -13,7 +14,7 @@ subtitle_main: This is Phantom, a free, fully responsive site<br />template desi
 susbtitle_secondary: Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.
 
 # Footer About Section
-about_footer: This theme was initially developed by HTML5 Templates and adapted for Hexo by Jonathan Klughertz.
+about_footer: This theme was initially developed by <a href="http://html5up.net" target="_blank">HTML5 UP</a>. It is adapted for Hexo by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a>.<br />The source code is available on <a href="https://github.com/klugjo/hexo-theme-phantom" target="_blank">GitHub</a>.
 
 # Default post title
 default_post_title: Untitled
@@ -38,13 +39,13 @@ comments:
 google_analytics:
 
 # Social Accounts
-twitter_url: sdfsd
+twitter_url: https://twitter.com/?lang=en
 facebook_url: https://www.facebook.com/
-instagram_url: sdfsdf
-dribble_url: https://dribbble.com/pixelhint
-github_url: sdfsdf
-googleplus_url: https://plus.google.com/+Pixelhint/posts
+instagram_url: https://www.instagram.com/
+dribble_url: https://dribbble.com/
+github_url: https://github.com/klugjo/hexo-theme-phantom/commits?author=klugjo
+googleplus_url: https://plus.google.com/
 behance_url: https://www.behance.net/
-fivehundredpx_url: sdfsdf
-email_url: sdfsdfs
-rss_url: sdfsdf
+fivehundredpx_url: https://500px.com/
+email_url: \#
+rss_url: \#
