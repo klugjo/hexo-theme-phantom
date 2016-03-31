@@ -1,0 +1,22 @@
+
+  .archives {
+    margin: 70px 0 30px 0;
+
+    .archive-title {
+      margin: 0 0 30px 27px;
+      font-weight: _font(weight-bold);
+      letter-spacing: _font(letter-spacing);
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+
+    ul.archive-list {
+
+      list-style-type: none;
+
+      li {
+        margin: 10px 0;
+      }
+    }
+  }
