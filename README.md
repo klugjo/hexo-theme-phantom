@@ -1,5 +1,7 @@
 # Phantom Blog Hexo
 
+![](http://www.codeblocq.com/img/hexo-theme-thumbnail/Phantom.png)
+
 Hexo implementation of the free [HTML5Up Phantom Template](http://html5up.net/phantom)
 
 Phantom is a photography/design portfolio oriented, responsive theme. [Demo here](http://www.codeblocq.com/assets/projects/hexo-theme-phantom/).
@@ -197,7 +199,7 @@ cover_detail: /assets/hero_image.jpg
 
 ## Creator
 
-This theme was created by [Pixel Hint](http://pixelhint.com/) and adapted for Hexo by [Jonathan Klughertz](http://www.codeblocq.com/).
+This theme was created by [HTML5 Up](http://html5up.net/phantom/) and adapted for Hexo by [Jonathan Klughertz](http://www.codeblocq.com/).
 
 ## Bugs
 
