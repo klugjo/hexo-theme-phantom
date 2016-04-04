@@ -30,8 +30,21 @@ Phantom is a photography/design portfolio oriented, responsive theme. [Demo here
 
 ## Installation
 
+### SCSS support
+
+Phantom uses SCSS as a css preprocessor. SCSS is not supported by default in hexo, the `hexo-renderer-scss` is required.
+
+Install it by using:
+
 ```
-$ git clone https://github.com/klugjo/hexo-theme-phantom phantom
+$ npm install --save hexo-renderer-scss
+```
+### Install the theme
+
+Install the theme by using:
+
+```
+$ git clone https://github.com/klugjo/hexo-theme-phantom themes/phantom
 ```
 
 Then update your blog's main `_config.yml` to set the theme to `phantom`:
