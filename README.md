@@ -134,8 +134,19 @@ default_cover_index: "http://placehold.it/450x450"
 
 You can specify a default thumbnail for posts/pages on the post/page page (Detail Page). This image will be used if you forget to specify an image in the post's front matter. If you don't specify a default and you don't specify an image in your post, no image will be displayed
 
+```
 # Default post cover index page
 default_cover_detail: "http://placehold.it/1300x500"
+```
+
+### Show Dates
+
+By default, Phantom does not show dates for posts and pages. You can set this config to true if you need to.
+
+```
+# Show Dates for posts and pages
+show_dates:
+```
 
 ### Comments
 

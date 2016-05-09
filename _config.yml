@@ -25,6 +25,9 @@ default_cover_index: "http://placehold.it/450x450"
 # Default post cover index page (Optional)
 default_cover_detail:
 
+# Show Dates for posts and pages
+show_dates:
+
 # Comments. Choose one by filling up the information
 comments:
   # Disqus comments
